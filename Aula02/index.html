@@ -4,25 +4,25 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <style>
-            form{
+            form input, form fieldset{
+                gap: 5px;
                 display: flex;
                 width: fit-content;
-                border: 1px solid black;
+                flex-direction: column;
             }
 
-            form input{
-                margin: auto;
+            .opcoes{
                 display: flex;
-                width: fit-content;
                 flex-direction: row;
-            }            
+            }
         </style>
     </head>
     <body>
         <header>
-            <h1>Inscrição Para Treinadores</h1>
-            <h3>Seu Primeiro Passo Para Ingressar Na Sua Jornada</h3>
+            <h1>INSCRIÇÃO PARA TREINADORES</h1>
+            <h3>SEU PRIMEIRO PASSO PARA INGRESSAR NA SUA JORNADA</h3>
         </header>
 
         <main>
@@ -33,6 +33,12 @@
 
                     <label for="idade">Idade:</label>
                     <input type="text" name="idade" id="idade" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="senha">Crie uma senha:</label>
+                    <input type="password" name="senha" id="senha" required>
 
                     <fieldset>
                         <legend>Região de Nascimento:</legend>
@@ -51,14 +57,14 @@
                         </select>
                     </fieldset>
 
-                    <label for="genero">Gênero</label>
-                    <input type="radio" name="genero" id="idmasc" required>Masculino</input>
-                    <input type="radio" name="genero" id="idfem" required>Feminino</input>
-                    <input type="radio" name="genero" id="idoutro" required>Outro</input>
+                    <label for="genero">Gênero:</label>
+                    <div class="opcoes">
+                        <input type="radio" name="genero" id="idmasc" required>Masculino</input>
+                        <input type="radio" name="genero" id="idfem" required>Feminino</input>
+                        <input type="radio" name="genero" id="idoutro" required>Outro</input>
+                    </div>
 
-                    <br><br>
-
-                    <textarea name="comentario" id="comentario" placeholder="Comentário"></textarea>
+                    <textarea name="comentario" id="comentario" placeholder="Comentários Para a Liga Índigo." rows="6"></textarea>
 
                     <input type="submit" value="ENVIAR">
                 </fieldset>
@@ -66,7 +72,7 @@
         </main>
 
         <footer>
-            <span>Direitos autorais reservados à confederação da liga pokémon de Kanto &copy; 27/02/1997</span>
+            <span>direitos autorais reservados à confederação da liga pokémon de kanto &copy; 27/02/1997</span>
         </footer>
     </body>
 </html>
