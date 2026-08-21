@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                display: flex;
+                width: fit-content;
+                border: 1px solid black;
+            }
+
+            form input{
+                margin: auto;
+                display: flex;
+                width: fit-content;
+                flex-direction: row;
+            }            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Inscrição Para Treinadores</h1>
+            <h3>Seu Primeiro Passo Para Ingressar Na Sua Jornada</h3>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+
+                    <label for="idade">Idade:</label>
+                    <input type="text" name="idade" id="idade" required>
+
+                    <fieldset>
+                        <legend>Região de Nascimento:</legend>
+
+                        <select name="regiao" id="regiao" required>
+                            <option value="kanto">Kanto</option>
+                            <option value="johto">Johto</option>
+                            <option value="hoenn">Hoenn</option>
+                            <option value="sinnoh">Sinnoh</option>
+                            <option value="unova">Unova</option>
+                            <option value="kalos">Kalos</option>
+                            <option value="alola">Alola</option>
+                            <option value="galar">Galar</option>
+                            <option value="paldea">Paldea</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </fieldset>
+
+                    <label for="genero">Gênero</label>
+                    <input type="radio" name="genero" id="idmasc" required>Masculino</input>
+                    <input type="radio" name="genero" id="idfem" required>Feminino</input>
+                    <input type="radio" name="genero" id="idoutro" required>Outro</input>
+
+                    <br><br>
+
+                    <textarea name="comentario" id="comentario" placeholder="Comentário"></textarea>
+
+                    <input type="submit" value="ENVIAR">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <span>Direitos autorais reservados à confederação da liga pokémon de Kanto &copy; 27/02/1997</span>
+        </footer>
+    </body>
+</html>
