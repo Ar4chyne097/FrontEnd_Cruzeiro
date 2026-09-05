@@ -1,0 +1,45 @@
+body{
+    background-color: #99d1db;
+}
+
+h1{
+    color: #ea76cb;
+    text-align: center;   
+}
+
+/*Figure*/
+figure img{
+    width: 280px;
+    position: relative;
+}
+
+figure figcaption{
+    left: 110px;
+    position: relative;
+}
+
+/*Nav links*/
+nav{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    padding: 5px;
+    font-size: 20px;
+    color: darkgreen;
+    box-shadow: 2px 2px 2px #5c5f77;
+    border: 1px solid black;
+}
+
+/*Main conteúdo*/
+p{
+    font-size: 25px;
+    color: #d20f39;
+}
+
+/*Footer*/
+footer span{
+    display: flex;
+}
