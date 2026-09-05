@@ -1,0 +1,9 @@
+footer{
+    width: 100%;
+    background-color: #85c1dc;   
+}
+
+footer span{
+    display: flex;
+    justify-content: center;
+}

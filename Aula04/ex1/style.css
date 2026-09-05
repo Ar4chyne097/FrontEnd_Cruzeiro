@@ -1,0 +1,36 @@
+body{
+    background-color: #f2d5cf;
+}
+
+h1{
+    text-align: center;
+}
+
+/*Figure*/
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    display: flex;
+    width: fit-content;
+    margin-bottom: 50px;
+    flex-direction: column;
+    background-color: #eebebe;
+}
+
+figure img{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+figure figcaption{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: #f4b8e4;
+}
+/**/

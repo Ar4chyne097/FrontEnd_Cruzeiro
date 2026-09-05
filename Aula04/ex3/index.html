@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../global.css">
+        <title>Aula 04 - Exercício 2 - Formulário</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <h1>Login</h1>
+
+            <div class="dados">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="dados">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <span>Esqueceu sua senha?</span>
+
+            <input type="submit" value="Entrar" id="btn" onclick="enviar()">
+        </form>
+
+        <footer>
+            <span>Direitos autorias de Alice &copy;</span>
+            <span>Data: 05/09/2026</span>
+        </footer>
+
+        <script>
+            var btn = document.getElementById("btn")
+
+            function enviar(){
+                alert("Olá! Bem-vindo(a) :)")
+            }
+        </script>
+    </body>
+</html>
