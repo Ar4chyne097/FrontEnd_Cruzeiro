@@ -1,0 +1,21 @@
+header{
+    gap: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+header, footer{
+    color: white;
+    background-color: black;
+}
+
+h1, h3{
+    font-weight: lighter;
+}
+
+nav{
+    gap: 10px;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(61, 8, 8);
+}
