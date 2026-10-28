@@ -1,0 +1,38 @@
+body{
+    font-weight: bolder;
+    background-color: lightblue;
+}
+
+.form{
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    text-align: center;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    background-color: pink;
+    border: 2px solid black;
+}
+
+form{
+    gap: 10px;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+}
+
+#resultado{
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: white;
+}
+
+#resultado{
+    table, tr, td, th, tbody{
+        border: 1px solid black;
+    }
+}

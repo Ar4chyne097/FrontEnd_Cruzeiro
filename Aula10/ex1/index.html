@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 10 - Exercício 1</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="form">
+            <form>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="txt_cidade">
+
+                <input type="button" value="CARREGAR" onclick="cidade()">
+            </form>
+            <div id="resultado">
+                <table>
+                    <tr>
+                        <td>Índice</td>
+                        <td>Nome</td>
+                    </tr>
+                    <tbody id="local_tb">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

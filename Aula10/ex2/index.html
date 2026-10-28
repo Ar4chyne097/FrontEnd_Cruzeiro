@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 10 - Exercício 2</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="form">
+            <form>
+                <label for="linha">Linhas:</label>
+                <input type="text" name="linha" id="linha">
+
+                <label for="coluna">Colunas:</label>
+                <input type="text" name="coluna" id="coluna">
+
+                <input type="button" value="carregar" onclick="matriz()">
+            </form>
+        </div>
+        <div id="resultado">
+            <table>
+                <tbody id="tb_local">
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

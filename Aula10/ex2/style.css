@@ -1,0 +1,40 @@
+body{
+    font-weight: bolder;
+    background-color: pink;
+}
+
+.form{
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    text-align: center;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+form{
+    gap: 10px;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+}
+
+#resultado{
+    gap: 10px;
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#resultado{
+    margin-top: 10px;
+    tbody td{
+        padding: 5px;
+    }
+}
