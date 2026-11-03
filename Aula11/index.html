@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Aula 11 - Objetos e Classes - Exercício</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Registro de Alunos</h1>
+        <div class="espaço">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="rgm">RGM:</label>
+                <input type="text" name="rgm" id="rgm">
+
+                <label for="a2">Nota na Prova Parcial:</label>
+                <input type="text" name="a2" id="a2">
+
+                <label for="ex">Nota nos Exercícios:</label>
+                <input type="text" name="ex" id="ex">
+
+                <label for="projeto">Nota nos Projetos em Grupos:</label>
+                <input type="text" name="projeto" id="projeto">
+
+                <label for="a1">Nota na Prova Regimental:</label>
+                <input type="text" name="a1" id="a1">
+
+                <div class="btns">
+                    <input type="button" value="Cadastrar" onclick="cadastrar()">
+                    <input type="button" value="Mostrar Alunos" onclick="lista()">
+                </div>
+            </form>
+        </div>
+        <div id="resultado" style="display: none;"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
