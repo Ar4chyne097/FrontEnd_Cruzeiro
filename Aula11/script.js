@@ -66,6 +66,20 @@ function lista(){
 
         let notas = document.createElement("p")
         notas.innerHTML = "Notas:"
+
+        let total = (sala[i].pp + sala[i].excs + sala[i].project + sala[i].pr)
+        let conceito = document.createElement("p")
+        conceito.style.border = "1px solid black"
+        conceito.style.borderRadius = "20px"
+        conceito.style.padding = "8px"
+
+        if(total >= 6.0){
+            conceito.innerHTML = "APROVADO(A)"
+            conceito.style.backgroundColor = "green"
+        }else{
+            conceito.innerHTML = "REPROVADO(A)"
+            conceito.style.backgroundColor = "red"
+        }
         
 
         aln.appendChild(alnName)
@@ -75,6 +89,8 @@ function lista(){
         aln.appendChild(alnEXS)
         aln.appendChild(alnPrjt)
         aln.appendChild(alnA1)
+        aln.appendChild(conceito)
+        console.log(total)
 
         if(!document.querySelector("h2")){
             espaço.appendChild(title)
