@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Aula 12 - Cookies e WebStorage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="frm">
+            <form>
+                <label for="rgm">RGM:</label>
+                <input type="text" name="rgm" id="rgm">
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="a2">Nota na Prova Parcial:</label>
+                <input type="text" name="a2" id="a2">
+
+                <label for="projeto">Nota no Projeto:</label>
+                <input type="text" name="projeto" id="projeto">
+
+                <label for="a1">Nota da Avaliação Regimental:</label>
+                <input type="text" name="a1" id="a1">
+
+                <div class="btns">
+                    <input type="button" value="Cadastrar" onclick="cadastro()">
+                    <input type="button" value="Exibir">
+                    <input type="button" value="Apagar">
+                    <input type="button" value="Autores" onclick="autoria()">
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
