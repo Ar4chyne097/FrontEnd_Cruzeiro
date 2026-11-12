@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+    margin-top: 0;
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.item-codigo{
+    font-weight: 10px;
+}
+
+hr{
+width: 250px;
+display: inline-flex;
+}
+.item-codigo{
+    color: blue;
+}
+
+
+
+

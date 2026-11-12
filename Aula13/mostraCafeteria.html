@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 13 - MiniProjeto - Index</title>
+    <script>
+      $(function () {
+            $.getJSON("https://www.mfpledon.com.br/cafeteriaJSON4.php",
+                function (dados) {
+                    var N = dados.length;
+                    var htmlContent = "";
+                    
+                    for (var i = 0; i < N; i++) {
+                    
+                        htmlContent += `
+                            <div class="card-item">
+                                <div class="item-info">
+                                    <span class="item-codigo">#${dados[i].codigo}</span>
+                                    <h4 class="item-nome">${dados[i].nome}</h4>
+                                    <span class="item-tipo">${dados[i].tipo}</span>
+                                </div>
+                                <div class="item-preco">
+                                    R$ ${parseFloat(dados[i].preco).toFixed(2).replace('.', ',')}
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
+                        `;
+                    }
+                    $("#iddiv").html(htmlContent);
+                });
+        });
+
+    </script>
+</head>
+
+<body>
+    <h3>Exemplo de acesso a dados em formato JSON gerados remotamente por uma página PHP</h3>
+    <div id="iddiv" ></div>
+   
+    
+    <ul>
+        <a href="dados.html"><li>Media de Todos os Pratos</li></a>
+        <a href="dados.html"><li>Media das Bebidas</li></a>
+        <a href="dados.html"><li>Pratos Principais</li></a>
+    </ul>
+</body>
+
+</html>
