@@ -12,6 +12,7 @@
                 function (dados) {
                     var N = dados.length;
                     var htmlContent = "";
+                    let soma = 0, bebida = 0;
                     
                     for (var i = 0; i < N; i++) {
                     
@@ -29,8 +30,19 @@
                             <hr>
                             <br>
                         `;
+                        if(dados[i].tipo == 'bebida'){
+                            bebida += parseFloat(dados[i].preco)
+                        }
+                        soma += parseFloat(dados[i].preco)
                     }
+                    let mediaP = soma/N, mediaB = bebida/N
+
+                    let str = "Média dos preços dos itens do cardápio: <br>" + mediaP.toFixed(2)
+                    let str2 = "<br>Média dos preços das bebidas do cardápio: <br>"+ mediaB.toFixed(2)                    
+
                     $("#iddiv").html(htmlContent);
+                    $("#iddiv").append("<br>" + str)
+                    $("#iddiv").append("<br>" + str2)
                 });
         });
 
@@ -40,13 +52,6 @@
 <body>
     <h3>Exemplo de acesso a dados em formato JSON gerados remotamente por uma página PHP</h3>
     <div id="iddiv" ></div>
-   
-    
-    <ul>
-        <a href="dados.html"><li>Media de Todos os Pratos</li></a>
-        <a href="dados.html"><li>Media das Bebidas</li></a>
-        <a href="dados.html"><li>Pratos Principais</li></a>
-    </ul>
 </body>
 
 </html>
