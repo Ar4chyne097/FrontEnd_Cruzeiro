@@ -26,11 +26,24 @@
 
                 <div class="btns">
                     <input type="button" value="Cadastrar" onclick="cadastro()">
-                    <input type="button" value="Exibir">
-                    <input type="button" value="Apagar">
+                    <input type="button" value="Exibir" onclick="listar()">
+                    <input type="button" value="Apagar" onclick="excluir()">
                     <input type="button" value="Autores" onclick="autoria()">
                 </div>
             </form>
+            <div id="resultado">
+                <table>
+                    <tr>
+                        <td>RGM</td>
+                        <td>Nome</td>
+                        <td>Projeto</td>
+                        <td>A2</td>
+                        <td>A1</td>
+                    </tr>
+                    <tbody id="local_tb">
+                    </tbody>
+                </table>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

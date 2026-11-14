@@ -81,7 +81,6 @@ function lista(){
             conceito.style.backgroundColor = "red"
         }
         
-
         aln.appendChild(alnName)
         aln.appendChild(alnId)
         aln.appendChild(notas)
